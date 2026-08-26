@@ -1,0 +1,38 @@
+.mainContainer{
+    display: flex;
+
+}
+.sideBar{
+    border: 2px solid black;
+    height: 650px;
+    width:30%;
+}
+.optionContainer{
+    border: 2px solid greenyellow;
+    margin-left: 20px;
+    margin-top: 25px;
+
+}
+.optionsBtn{
+width: 150px;
+height: 50px;
+font-size:18px;
+}
+.inboxMain{
+  border : 2px solid pink;
+  width : 60%;
+  margin-left: 6%;
+  display: flex;
+  
+  justify-content: center;
+}
+.addTaskBtn{
+width: 150px;
+height: 50px;
+font-size:18px;
+}
+.addTask{
+    margin-left: 20px;
+    margin-top: 80px;
+    border : 2px solid goldenrod
+}
