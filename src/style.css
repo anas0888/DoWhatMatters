@@ -17,6 +17,11 @@
 width: 150px;
 height: 50px;
 font-size:18px;
+transition: background-color 1s ease, transform 0.2s ease;
+}
+.optionsBtn:hover{
+    background-color: black;
+    color: aliceblue;
 }
 .inboxMain{
   border : 2px solid pink;
@@ -30,6 +35,11 @@ font-size:18px;
 width: 150px;
 height: 50px;
 font-size:18px;
+transition: background-color 1s ease, transform 0.2s ease;
+}
+.addTaskBtn:hover{
+    background-color: rgb(139, 209, 139);
+    color:aliceblue
 }
 .addTask{
     margin-left: 20px;
