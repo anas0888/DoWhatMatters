@@ -34,5 +34,6 @@ addTaskBtn.addEventListener("click", () => {
 
     inboxContainer.append(taskBox);
     dialog.close();
+    userInput.value = "";
   });
 });
