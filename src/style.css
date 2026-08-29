@@ -28,8 +28,19 @@ transition: background-color 1s ease, transform 0.2s ease;
   width : 60%;
   margin-left: 6%;
   display: flex;
-  
-  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.taskContainer{
+     border : 2px solid pink;
+  width : 90%;
+  height: 90%;
+  margin: 6%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  flex-wrap: wrap;
 }
 .addTaskBtn{
 width: 150px;
