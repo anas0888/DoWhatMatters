@@ -7,7 +7,7 @@ task.innerHTML = `
     </input>
     <div class = "dialogBtn">
         <button type="button" id = "cancelBtn">Cancel</button>
-        <button type="submit" id = "submitBtn">Submit</button>
+        <button type="button" id = "submitBtn">Submit</button>
     </div>
 </dialog>`
 
