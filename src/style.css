@@ -57,3 +57,6 @@ transition: background-color 1s ease, transform 0.2s ease;
     margin-top: 80px;
     border : 2px solid goldenrod
 }
+.completed{
+    text-decoration: line-through;
+}
