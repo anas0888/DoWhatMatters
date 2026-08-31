@@ -2,7 +2,7 @@ import "./style.css";
 import { addTask } from "./addTask.js";
 import { inbox } from "./inbox.js";
 
-
+// addTask 
 const task = addTask();
 document.body.appendChild(task);
 const addTaskBtn = document.querySelector(".addTaskBtn");
@@ -17,7 +17,7 @@ addTaskBtn.addEventListener("click", () => {
 
   if (!dialog || !cancelBtn || !submit) {
     console.log("error in the dialog box: missing element(s)", { dialog, cancelBtn, submit });
-    return; 
+    return;
   }
 
   dialog.showModal();
@@ -26,14 +26,24 @@ addTaskBtn.addEventListener("click", () => {
     dialog.close();
   };
 
-  submit.addEventListener("click", () => {
+  submit.onclick = () => {
     const userText = userInput.value;
 
     const taskBox = document.createElement("div");
-    taskBox.textContent = userText;
+    const taskText = document.createElement("span");
+    const doneBtn = document.createElement("button");
+
+    taskText.textContent = userText;
+    doneBtn.textContent = "Done";
+    doneBtn.addEventListener("click", () => {
+      taskText.classList.toggle("completed");
+    });
 
     inboxContainer.append(taskBox);
+    taskBox.append(taskText);
+    taskBox.append(doneBtn);
+
     dialog.close();
     userInput.value = "";
-  });
+  };
 });
