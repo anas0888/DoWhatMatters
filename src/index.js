@@ -10,7 +10,7 @@ const userInput = document.getElementById("userInput");
 
 addTaskBtn.addEventListener("click", () => {
 
- const inboxContainer = inbox();
+  const inboxContainer = inbox();
   const dialog = document.getElementById("taskDialog");
   const cancelBtn = document.getElementById("cancelBtn");
   const submit = document.getElementById("submitBtn");
