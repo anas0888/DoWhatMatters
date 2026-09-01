@@ -1,7 +1,7 @@
 import "./style.css";
 import { addTask } from "./addTask.js";
 import { inbox } from "./inbox.js";
-import  {mainDate}  from "./upcommingEvents.js";
+
 // addTask 
 const task = addTask();
 document.body.appendChild(task);
@@ -9,8 +9,8 @@ const addTaskBtn = document.querySelector(".addTaskBtn");
 const userInput = document.getElementById("userInput");
 
 addTaskBtn.addEventListener("click", () => {
- 
 
+ const inboxContainer = inbox();
   const dialog = document.getElementById("taskDialog");
   const cancelBtn = document.getElementById("cancelBtn");
   const submit = document.getElementById("submitBtn");
@@ -47,14 +47,3 @@ addTaskBtn.addEventListener("click", () => {
     userInput.value = "";
   };
 });
-const eventModal = mainDate();
-const upcommingEvents =  document.getElementById('upcommingEvent')
-console.log(upcommingEvents)
-upcommingEvents.addEventListener ('click', () => {
-   const inboxContainer = inbox();
-  const dateContainer = document.createElement('div');
-  const readableDatejs = eventModal;
-dateContainer.innerHTML = `${readableDatejs}`;
-console.log(eventModal)
-inboxContainer.append(dateContainer)
-})
